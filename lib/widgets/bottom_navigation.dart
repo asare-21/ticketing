@@ -16,7 +16,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
         showSelectedLabels: false,
         selectedItemColor: Colors.blueGrey,
         unselectedItemColor: const Color(0xff526480),
-        onTap: (val) => value.updateIndex(val),
+        onTap: (val) => value.animateToPage(val),
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(FluentSystemIcons.ic_fluent_home_regular),
