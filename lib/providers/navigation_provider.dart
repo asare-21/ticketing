@@ -5,7 +5,7 @@ import 'package:tickets/screens/search_screen.dart';
 import 'package:tickets/screens/tickets_screen.dart';
 
 class NavigationProvider with ChangeNotifier {
-  final PageController controller = PageController();
+  // final PageController controller = PageController();
   int _currentIndex = 0;
 
   final List<Widget> _screens = [
@@ -27,7 +27,7 @@ class NavigationProvider with ChangeNotifier {
 
   // animate to page
   void animateToPage(int index) {
-    controller.jumpToPage(index);
+    // controller.jumpToPage(index);
     updateIndex(index);
   }
 }

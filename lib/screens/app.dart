@@ -15,12 +15,8 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Consumer<NavigationProvider>(
-          builder: (context, value, child) => PageView.builder(
-                itemBuilder: (context, index) => value.screens[index],
-                itemCount: value.screens.length,
-                controller: value.controller,
-                onPageChanged: (index) => value.animateToPage(index),
-              )),
+          builder: (context, value, child) =>
+              value.screens[value.currentIndex]),
       bottomNavigationBar: const CustomBottomNavigationBar(),
     );
   }

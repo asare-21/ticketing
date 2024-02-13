@@ -1,6 +1,7 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:tickets/config/helpers.dart';
 import 'package:tickets/providers/navigation_provider.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
@@ -15,7 +16,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
         showUnselectedLabels: false,
         showSelectedLabels: false,
         selectedItemColor: Colors.blueGrey,
-        unselectedItemColor: const Color(0xff526480),
+        unselectedItemColor: Styles.textColor,
         onTap: (val) => value.animateToPage(val),
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
