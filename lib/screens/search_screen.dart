@@ -14,31 +14,33 @@ class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: DefaultTabController(
-      length: 2,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Column(
-          children: [
-            const Gap(30),
-            Text("What are you looking for?",
-                style: Theme.of(context)
-                    .textTheme
-                    .headlineLarge!
-                    .copyWith(fontWeight: FontWeight.bold)),
-            const Gap(20),
-            const TabBar(indicatorSize: TabBarIndicatorSize.tab, tabs: [
-              Tab(
-                text: "Airline Tickets",
-              ),
-              Tab(
-                text: "Hotels",
-              )
-            ]),
-            const Expanded(
-                child:
-                    TabBarView(children: [AirlineTickets(), AirlineTickets()]))
-          ],
+        body: SafeArea(
+      child: DefaultTabController(
+        length: 2,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            children: [
+              const Gap(30),
+              Text("What are you looking for?",
+                  style: Theme.of(context)
+                      .textTheme
+                      .headlineLarge!
+                      .copyWith(fontWeight: FontWeight.bold)),
+              const Gap(20),
+              const TabBar(indicatorSize: TabBarIndicatorSize.tab, tabs: [
+                Tab(
+                  text: "Airline Tickets",
+                ),
+                Tab(
+                  text: "Hotels",
+                )
+              ]),
+              const Expanded(
+                  child: TabBarView(
+                      children: [AirlineTickets(), AirlineTickets()]))
+            ],
+          ),
         ),
       ),
     ));
