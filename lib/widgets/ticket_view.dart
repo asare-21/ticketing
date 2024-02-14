@@ -1,9 +1,7 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:tickets/config/app_layout.dart';
-import 'package:tickets/config/helpers.dart';
 import 'package:tickets/widgets/lower_ticket_half.dart';
 import 'package:tickets/widgets/upper_ticket_half.dart';
 

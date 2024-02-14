@@ -46,7 +46,13 @@ class _TicketScreenState extends State<TicketScreen> {
                 ),
                 const Expanded(
                   child: TabBarView(
-                    children: [ElongatedTicket(), TicketView()],
+                    children: [
+                      ElongatedTicket(),
+                      Padding(
+                        padding: EdgeInsets.all(15.0),
+                        child: TicketView(),
+                      )
+                    ],
                   ),
                 ),
               ],

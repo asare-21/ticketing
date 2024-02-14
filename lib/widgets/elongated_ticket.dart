@@ -2,7 +2,6 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:tickets/config/helpers.dart';
 
 class ElongatedTicket extends StatelessWidget {
   const ElongatedTicket({super.key});
